@@ -1,4 +1,4 @@
-# addamo_entrega07
+# addamo_entrega08
 Project name: Annie's Bakery
 
 ## Table of content
@@ -7,7 +7,7 @@ Project name: Annie's Bakery
 3. [FAQs?]
 
 [General information]
-* Desafio: MAQUETANDO CON BOOTSTRAP
+* Desafio complementario: APLICANDO BOOTSTRAP
 * Curso: Desarrollo Web
 * Centro de Capacitacion Coderhouse (www.coderhouse.com)
 

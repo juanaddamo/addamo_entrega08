@@ -9,9 +9,10 @@
 body{
     background-image: url(../img/fondo_annies.png);
     font-family: 'Open Sans';
+    padding-top: 6.5rem;
 }   
 
-/* estilo del menu de bootstrap para menu index.html */
+/* estilo del menu */
 .navbar {
     background-color: #d49d81;
     font-family:'Open Sans';
@@ -21,69 +22,16 @@ body{
     background-color: #d49d81;
 }
 
-
-/* estilo del menu */
-.menuUl{
-    display: flex;
-    background-image: linear-gradient(#B4846C, #fcd4c0);
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    list-style-type: none;
-    padding: 1rem;
-}
-
-nav ul li{
-    padding: 0.5rem;
-    color: white;
-    position: relative;
-}
-
-.menu ul li a{
-    text-decoration: none;
-    color: white;
-}
-
 /* se agranda la imagen del logo del menu*/
 .imagenLogo:hover{
-    transform: scale(1.3) ;
-}
-
-/* oculto el submenu */
-.menu ul ul{
-    display: none;
-    position: absolute;
-}
-
-.menu ul li:hover > ul{
-    display: block;
-    background-color: #d49d81;
-    border-radius: 1rem;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.1rem;
-    padding: 0.5rem;
-    list-style-type: none;
-}
-
-.botonesMenu{
-    background-color: #d49d81;
-    border-style: solid;
-    border-color: black;
-    border-width: 0.1rem;
-    border-radius: 1rem;
-}
-
-/* se agranda la imagen del logo de redes sociales */
-.imagenRedes:hover{
-    transform: scale(1.3) ;
+    transform: scale(1.1) ;
 }
 
 /* estilos del main */
 .estiloIndex{
-    height: 90vh;
     display: grid;
     grid-template-areas: "saludoUno"
+    "imagenIndex1"
     "parrafoUno"
     "parrafoDos"
     "firma"
@@ -94,6 +42,12 @@ nav ul li{
     grid-area: saludoUno;
     text-align: center;  
 }
+
+.imagenIndex1{
+    grid-area: imagenIndex1;
+    justify-self: center;
+}
+
 .parrafoUno{
     grid-area: parrafoUno;
     margin: 0.5rem;
@@ -114,6 +68,8 @@ nav ul li{
 .imagenInicio1{
     grid-area: imagenInicio1;
     justify-self: center;
+    box-shadow: .2rem .2rem #B4846C;
+    margin: .5rem;
 }
 
 .imagenInicio2{
@@ -126,12 +82,13 @@ nav ul li{
 
 /* estilo de footer */
 footer{
-    padding: 10px;
+    margin: .5rem;
     font-family: 'Open Sans';
     background-image: linear-gradient(#B4846C, #fcd4c0);
     text-align: center;
     color: black;
 }
+
 
 /* defino media queries para index.html */
 /* mq para tablets de 768px */
@@ -139,6 +96,7 @@ footer{
     .estiloIndex{
         display: grid;
         grid-template-areas: "saludoUno saludoUno"
+        "imagenIndex1 imagenIndex1"
         "parrafoUno parrafoUno"
         "parrafoDos parrafoDos"
         "firma firma"
@@ -168,6 +126,8 @@ footer{
         grid-area: imagenInicio2;
         display: block;
         justify-self: center;
+        box-shadow: .2rem .2rem #B4846C;
+        margin: .5rem;
     }
 
 }
@@ -177,6 +137,7 @@ footer{
     .estiloIndex{
         display: grid;
         grid-template-areas: "saludoUno saludoUno saludoUno"
+        "imagenIndex1 imagenIndex1 imagenIndex1"
         "parrafoUno parrafoUno parrafoUno"
         "parrafoDos parrafoDos parrafoDos"
         "firma firma firma"
@@ -209,6 +170,8 @@ footer{
         grid-area: imagenInicio3;
         display: block;
         justify-self: center;
+        box-shadow: .2rem .2rem #B4846C;
+        margin: .5rem;
     }
 }
 
@@ -305,11 +268,23 @@ h3{
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: #d49d81;
-    border-radius: 1rem;
+    border-radius: .5rem;
+}
+
+h5{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: #d49d81;
+    border-radius: .5rem;
+    box-shadow: 0.2rem 0.2rem gray;
 }
 
 p{
     padding: 0.5rem;
+}
+
+.formatoImagen{
+    border-radius: 20%
 }
 
 /* defino media queries para tartas.html */
@@ -360,6 +335,7 @@ h2{
 .tituloBundt{
     grid-area: tituloBundt;
     justify-self: center;
+
 }
 
 .bundtUno{
@@ -441,4 +417,11 @@ h2{
     margin: 1rem;
 }
 
+/* se agranda la imagen del logo de redes sociales */
+.imagenContacto1:hover{
+    transform: scale(1.3) ;
+}
 
+.imagenContacto2:hover{
+    transform: scale(1.3) ;
+}
